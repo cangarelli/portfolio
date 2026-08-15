@@ -61,7 +61,7 @@ export const intro: Map<
           text: [
             "I am a full-stack developer specialized in agile, secure, and scalable digital solutions.",
             "I combine technical expertise with organizational vision to support companies, startups, and institutions in their digital transformation.",
-            "I specialize in learning and innovation processes. I am adept at active listening to provide solutions to user and community problems.",
+            "I specialize in learning and innovation processes. I am adept at active listening to provide solutions to users and community problems.",
           ],
         },
         {

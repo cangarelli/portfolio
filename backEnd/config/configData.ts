@@ -1,7 +1,7 @@
 "use server";
 
 const config = {
-  security: { enviroment: "normal" },
+  security: { enviroment: "lazy" },
 };
 
 export default config;

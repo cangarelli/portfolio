@@ -1,11 +1,9 @@
 "use client";
-import { Limelight } from "next/font/google";
+import { Dekko, Limelight } from "next/font/google";
 import React, { ReactElement } from "react";
-const limelight = Limelight({
-  weight: "400",
-  variable: "--font-limelight-mono",
-  subsets: ["latin"],
-});
+
+const deko = Dekko({ weight: ["400"], subsets: ["latin"] });
+
 // 1️⃣ Definimos una interfaz para las props
 interface TipographyProps {
   type:
@@ -33,12 +31,12 @@ const Typography: React.FC<TipographyProps> = ({
     { bStyle: string; tStyle: string }
   > = {
     mainTitle: {
-      bStyle: `font-bold // px-10 my-2 //  border-b-2 border-white rounded-lg ${limelight.className} ${bgStyle}`,
-      tStyle: `${textStyle || "text-black"} text-center font-bold`,
+      bStyle: `font-bold // px-10 my-2 //  border-b-2 border-white rounded-lg ${deko.className} ${bgStyle}`,
+      tStyle: `${textStyle || "text-black"} text-3xl text-center font-bold`,
     },
     title: {
-      bStyle: `${bgStyle}`,
-      tStyle: `${textStyle || "text-black"} font-bold`,
+      bStyle: `${bgStyle} ${deko.className}`,
+      tStyle: `${textStyle || "text-black"} text-xl  font-bold`,
     },
     subtitle: {
       bStyle: `w-full my-2 px-1 // rounded-lg ${bgStyle}`,

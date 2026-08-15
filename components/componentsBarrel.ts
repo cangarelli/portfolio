@@ -5,6 +5,11 @@ export { default as PortfolioModule } from "./portfolioModule/mainBranch/Module"
 export { default as PortfolioHero } from "./portfolioModule/mainBranch/Negocio";
 export { default as PortfolioHeader } from "./portfolioModule/mainBranch/Vista";
 
+/* Knoledges branch */
+export { default as KnoledgesModule } from "./portfolioModule/KnolegeBranch/Module";
+export { default as Knoledges } from "./portfolioModule/KnolegeBranch/Negocio";
+export { default as KnoledgesHeaders } from "./portfolioModule/KnolegeBranch/Vista";
+
 // Service Module
 /* Nav Bar Branch */
 export { default as NavBarModule } from "./serviceModule/NavBarBranch/Module";

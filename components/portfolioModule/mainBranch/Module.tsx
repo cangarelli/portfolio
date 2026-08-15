@@ -1,15 +1,16 @@
 "use client";
 
-import { UserPreferenceContext } from "@/app/contexts/userPreferenceContext";
-import { useContext } from "react";
 import { PortfolioHero, PortfolioHeader } from "@/components/componentsBarrel";
 import { intro } from "@/app/schemas/mainPageSchemas";
-import image from "@/app/assets/png/brand_icon.png";
 import { StaticImageData } from "next/image";
-interface PortfolioModuleProps {}
+import { useContext } from "react";
+import { UserPreferenceContext } from "@/app/contexts/userPreferenceContext";
+interface PortfolioModuleProps {
+  language: string
+}
 
-const PortfolioModule: React.FC<PortfolioModuleProps> = ({}) => {
-  const { preferences } = useContext(UserPreferenceContext);
+const PortfolioModule: React.FC<PortfolioModuleProps> = ({language}) => {
+    const { preferences } = useContext(UserPreferenceContext);
 
   const dataSchema: {
     title: string;
@@ -19,10 +20,10 @@ const PortfolioModule: React.FC<PortfolioModuleProps> = ({}) => {
       subtitle: string;
       text: string[];
     }>;
-  } = intro.get(preferences.language)!;
+  } = intro.get(language)!;
 
   return (
-    <div className="w-screen">
+    <div className="w-screen ">
       <PortfolioHeader
         title={dataSchema?.title}
         epigrafe={dataSchema?.epigrafe}
