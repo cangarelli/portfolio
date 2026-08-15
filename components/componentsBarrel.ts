@@ -15,6 +15,7 @@ export { default as NavBarButtonPad } from "./serviceModule/NavBarBranch/Vista";
 export { default as BrandingLogo } from "./serviceModule/BrandingBranch/BrandingLogo";
 export { default as Typography } from "./serviceModule/BrandingBranch/Typography";
 export { default as Footer } from "./serviceModule/BrandingBranch/Footer";
+export { default as DefuseBanner } from "./serviceModule/BrandingBranch/DefuseBanner";
 
 /* Button Branch */
 export { default as ButtonGlobal } from "./serviceModule/ButtonBranch/ButtonGlobal";

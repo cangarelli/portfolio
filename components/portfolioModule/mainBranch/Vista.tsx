@@ -10,7 +10,7 @@ interface PortfolioCardProps {
 
 const PortfolioHeader: React.FC<PortfolioCardProps> = ({ title, epigrafe }) => {
   return (
-    <div className="py-4 bg-green-50 flex flex-col items-center justify-center">
+    <div className="mt-4 bg-blue-50 flex flex-col items-center justify-center">
       <Typography type="mainTitle" text={title} />
       <Typography type="subtitle" text={epigrafe} />
     </div>

@@ -36,7 +36,10 @@ const Typography: React.FC<TipographyProps> = ({
       bStyle: `font-bold // px-10 my-2 //  border-b-2 border-white rounded-lg ${limelight.className} ${bgStyle}`,
       tStyle: `${textStyle || "text-black"} text-center font-bold`,
     },
-    title: { bStyle: ``, tStyle: `${textStyle || "text-black"} font-bold` },
+    title: {
+      bStyle: `${bgStyle}`,
+      tStyle: `${textStyle || "text-black"} font-bold`,
+    },
     subtitle: {
       bStyle: `w-full my-2 px-1 // rounded-lg ${bgStyle}`,
       tStyle: `font-bold text-center`,
