@@ -9,14 +9,15 @@ interface PortfolioModuleProps {}
 
 const PortfolioModule: React.FC<PortfolioModuleProps> = ({}) => {
   const { preferences } = useContext(UserPreferenceContext);
-  // const introSchemas = schemaManager.get("intro")
+
   const dataSchema: {
     title: string;
     epigrafe: string;
     section: Array<{ subtitle: string; text: string[] }>;
   } = intro.get(preferences.language)!;
+
   return (
-    <div className="w-screen ">
+    <div className="w-screen">
       <PortfolioHeader
         title={dataSchema?.title}
         epigrafe={dataSchema?.epigrafe}
