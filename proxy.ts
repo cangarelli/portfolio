@@ -6,7 +6,6 @@ import {
 } from "@/backEnd/functionLibrary/functiónBarrel";
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
-// import securityHeaders from './backEnd/helpers/security/headers/staticPolicySettings';
 
 export function proxy(request: NextRequest) {
   // Definición de politicas dinamicas sobre contenido en transito

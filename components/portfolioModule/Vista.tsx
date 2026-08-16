@@ -1,18 +1,18 @@
 "use client";
 
-import React from "react";
 import { Typography } from "@/components/componentsBarrel";
-interface PortfolioProps {
+import React from "react";
+
+interface PortfolioCardProps {
   data: { subtitle: string; text: string[] };
-  i: number;
 }
 
-const Knoledges: React.FC<PortfolioProps> = ({ data, i }) => {
-
+const SectionColumns: React.FC<PortfolioCardProps> = ({ data }) => {
   return (
-    <div
-      className={`flex flex-grow items-start justify-center // size-full py-6 px-2 mb-2 // rounded-lg shadow-xl `}
-    >
+    <div className="pb-6 flex flex-grow items-start justify-center // size-full ">
+      <div
+        className={`flex flex-grow items-start justify-center // size-full py-2 px-2 mb-2 // rounded-lg shadow-xl  `}
+      >
         <div className="mx-auto h-full flex flex-grow flex-col items-center justify-start">
           <Typography
             type="title"
@@ -24,8 +24,9 @@ const Knoledges: React.FC<PortfolioProps> = ({ data, i }) => {
             <Typography key={index} type="bodyJustify" text={t} />
           ))}
         </div>
+      </div>
     </div>
   );
 };
 
-export default Knoledges;
+export default SectionColumns;

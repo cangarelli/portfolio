@@ -18,8 +18,8 @@ export const intro: Map<
   [
     "esp",
     {
-      title: "Carlos Andrés Garelli",
-      epigrafe: "Portafolio",
+      title: "¡Hola! Soy Andrés",
+      epigrafe: "Soy un desarrollador web full stack, independiente y creativo",
       section: [
         {
           image: first,
@@ -52,8 +52,8 @@ export const intro: Map<
   [
     "eng",
     {
-      title: "Carlos Andrés Garelli",
-      epigrafe: "Portfolio",
+      title: "¡Hi! I´m Andrés",
+      epigrafe: "Creative and independant full stack web developer",
       section: [
         {
           image: first,

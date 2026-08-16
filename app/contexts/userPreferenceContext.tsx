@@ -1,22 +1,19 @@
 "use client";
+
 // Componentes de React
 
 import {
   createContext,
-  useContext,
-  useEffect,
   useState,
   ReactNode,
   Dispatch,
   SetStateAction,
 } from "react";
 
-//Componentes propios
-interface UserPreference {
-  theme: "light" | "dark" | "system";
-  language: "eng" | "esp";
-  notification: boolean;
-}
+// Typos Globales
+import { UserPreference } from "@/config/globalTypesLibrary/globalTypesBarrel";
+
+// Types Local
 type UserPreferenceContextType = {
   preferences: UserPreference;
   setPreferences: Dispatch<SetStateAction<UserPreference>>;

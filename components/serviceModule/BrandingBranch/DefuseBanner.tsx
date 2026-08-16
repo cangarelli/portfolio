@@ -15,6 +15,7 @@ const DefuseBanner: React.FC<DefuseBannerProps> = ({ img, alt, i }) => {
     <div className="relative w-full h-64 overflow-hidden">
       <Image
         className={`object-cover ${radialMaskPosition} mask-radial-from-20% mask-radial-to-70%`}
+        loading="eager"
         // width= "auto"
         // height="auto"
         src={img}

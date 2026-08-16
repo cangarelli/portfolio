@@ -1,14 +1,11 @@
 // Portfolio module
 
-/* Main branch */
-export { default as PortfolioModule } from "./portfolioModule/mainBranch/Module";
-export { default as PortfolioHero } from "./portfolioModule/mainBranch/Negocio";
-export { default as PortfolioHeader } from "./portfolioModule/mainBranch/Vista";
+export { default as SectionModule } from "./portfolioModule/Module";
+export { default as Section } from "./portfolioModule/Negocio";
+export { default as SectionColumns } from "./portfolioModule/Vista";
 
-/* Knoledges branch */
-export { default as KnoledgesModule } from "./portfolioModule/KnolegeBranch/Module";
-export { default as Knoledges } from "./portfolioModule/KnolegeBranch/Negocio";
-export { default as KnoledgesHeaders } from "./portfolioModule/KnolegeBranch/Vista";
+export { default as Hero } from "./serviceModule/BrandingBranch/Hero";
+export { default as SectionHeader } from "./serviceModule/BrandingBranch/SectionHeader";
 
 // Service Module
 /* Nav Bar Branch */

@@ -1,6 +1,6 @@
 "use server";
 
-import config from "@/backEnd/config/configData";
+import config from "@/config/configData";
 
 const contentSecurityPolicyBuilder = (): {
   policyValue: string;

@@ -1,16 +1,15 @@
 "use client";
-import { StaticImageData } from "next/image";
 import React from "react";
 import { DefuseBanner, Typography } from "@/components/componentsBarrel";
-interface PortfolioProps {
-  data: { image: StaticImageData; subtitle: string; text: string[] };
+import { GeneralSectionWithImage } from "@/config/globalTypesLibrary/globalTypesBarrel";
+interface HeroProps {
+  data: GeneralSectionWithImage;
   i: number;
 }
 
-const PortfolioHero: React.FC<PortfolioProps> = ({ data, i }) => {
-  console.log("Profile hero control", { index: i, text: `${100 * (i + 1)}` });
+const Hero: React.FC<HeroProps> = ({ data, i }) => {
   const bgClasses: string[] = [
-    "bg-gradient-to-b from-blue-50 to-blue-100",
+    "bg-gradient-to-b from-blue-0 to-blue-100",
     "bg-gradient-to-b from-blue-100 to-blue-200",
     "bg-gradient-to-b from-blue-200 to-blue-300",
     "bg-gradient-to-b from-blue-300 to-blue-400",
@@ -18,7 +17,7 @@ const PortfolioHero: React.FC<PortfolioProps> = ({ data, i }) => {
   ];
   return (
     <div
-      className={`flex items-center justify-center // bg-opacity-50 ${bgClasses[i]} // w-full py-6 px-2 mb-2 // rounded-lg shadow-xl `}
+      className={`flex items-center justify-center // bg-opacity-50 ${bgClasses[i]} // w-full py-6 px-2// rounded-lg shadow-xl `}
     >
       {i % 2 === 0 ? (
         <div className="max-w-2xl mx-auto flex items-center justify-between">
@@ -54,4 +53,4 @@ const PortfolioHero: React.FC<PortfolioProps> = ({ data, i }) => {
   );
 };
 
-export default PortfolioHero;
+export default Hero;
