@@ -19,7 +19,7 @@ export const intro: Map<
     "esp",
     {
       title: "¡Hola! Soy Andrés",
-      epigrafe: "Soy un desarrollador web full stack, independiente y creativo",
+      epigrafe: "Un desarrollador web full stack, independiente y creativo",
       section: [
         {
           image: first,

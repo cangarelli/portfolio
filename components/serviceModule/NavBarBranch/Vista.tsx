@@ -6,6 +6,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { GiStarFormation } from "react-icons/gi";
 import { BsViewList } from "react-icons/bs";
 import { SiSololearn } from "react-icons/si";
+import { GiPropellerBeanie } from "react-icons/gi";
 
 import { FaGithub } from "react-icons/fa";
 import { Language } from "@/config/globalTypesLibrary/globalTypesBarrel";
@@ -25,18 +26,12 @@ const NavBarButtonPad: React.FC<NavBarButtonPadProps> = ({
       : manager({ language: "esp" });
   };
   const btnSchema = new Map([
-    ["esp", { view1: "some", view2: "Saber hacer" }],
-    ["eng", { view1: "some", view2: "Know how" }],
+    ["esp", { view1: "Proyectos", view2: "Saber hacer" }],
+    ["eng", { view1: "Proyects", view2: "Know how" }],
   ]);
   return (
     <div className="flex">
       <DropDown menuTitle={<BsViewList />}>
-        <ButtonGlobal
-          type="out"
-          icon={<FaGithub />}
-          label={"GitHub"}
-          value="https://github.com/cangarelli"
-        />
         <ButtonGlobal
           type="button"
           icon={<SiSololearn />}
@@ -44,6 +39,16 @@ const NavBarButtonPad: React.FC<NavBarButtonPadProps> = ({
           handler={() =>
             document
               .getElementById("target")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        />
+        <ButtonGlobal
+          type="button"
+          icon={<GiPropellerBeanie />}
+          label={btnSchema.get(language)?.view1}
+          handler={() =>
+            document
+              .getElementById("proyects")
               ?.scrollIntoView({ behavior: "smooth" })
           }
         />

@@ -31,7 +31,7 @@ const Typography: React.FC<TipographyProps> = ({
     { bStyle: string; tStyle: string }
   > = {
     mainTitle: {
-      bStyle: `font-bold // px-10 my-2 //  border-b-2 border-white rounded-lg ${deko.className} ${bgStyle}`,
+      bStyle: `px-10 my-2 //  ${deko.className} ${bgStyle}`,
       tStyle: `${textStyle || "text-black"} text-3xl text-center font-bold`,
     },
     title: {

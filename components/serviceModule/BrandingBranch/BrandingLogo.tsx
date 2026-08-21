@@ -14,6 +14,7 @@ const BrandingLogo: React.FC<BrandingLogoProps> = ({ img, alt, size }) => {
       className={` h-[${size || 80}px] w-[${size || 80}px]  mx-2 hover:h-80% hover:w-80%`}
       src={img}
       alt={alt}
+      loading="eager"
       height={size || 80}
       width={size || 80}
     />

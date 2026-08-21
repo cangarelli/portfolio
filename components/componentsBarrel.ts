@@ -1,11 +1,21 @@
 // Portfolio module
 
-export { default as SectionModule } from "./portfolioModule/Module";
-export { default as Section } from "./portfolioModule/Negocio";
-export { default as SectionColumns } from "./portfolioModule/Vista";
+/* Narrative Branch */
+export { default as NarrativeModel } from "./portfolioModule/narrativeBranch/Modelo";
+export { default as Narrative } from "./portfolioModule/narrativeBranch/Negocio";
+export { default as NarrativesColumn } from "./portfolioModule/narrativeBranch/Vista";
+
+/* Proyects Branch */
+export { default as ProyectsModule } from "./portfolioModule/proyectsBranch/Module";
+export { default as Proyects } from "./portfolioModule/proyectsBranch/Negocio";
+export { default as ProyectsCard } from "./portfolioModule/proyectsBranch/Vista";
+
+/* Welcome Branch */
+export { default as WelcomeModule } from "./portfolioModule/welcomeBranch/Module";
+export { default as Welcome } from "./portfolioModule/welcomeBranch/Negocio";
+export { default as WelcomeIlustration } from "./portfolioModule/welcomeBranch/Vista";
 
 export { default as Hero } from "./serviceModule/BrandingBranch/Hero";
-export { default as SectionHeader } from "./serviceModule/BrandingBranch/SectionHeader";
 
 // Service Module
 /* Nav Bar Branch */
@@ -16,7 +26,6 @@ export { default as NavBarButtonPad } from "./serviceModule/NavBarBranch/Vista";
 /* Branding Branch */
 export { default as BrandingLogo } from "./serviceModule/BrandingBranch/BrandingLogo";
 export { default as Typography } from "./serviceModule/BrandingBranch/Typography";
-export { default as Footer } from "./serviceModule/BrandingBranch/Footer";
 export { default as DefuseBanner } from "./serviceModule/BrandingBranch/DefuseBanner";
 
 /* Button Branch */

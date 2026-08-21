@@ -5,8 +5,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 async function users(req: NextApiRequest, res: NextApiResponse) {
   try {
-
-    await customRouteSettings.init(req, res)
+    await customRouteSettings.init(req, res);
 
     if (req.method === "POST") {
       res.status(200).json(`${req.method} automatic response`);

@@ -1,4 +1,4 @@
-const knoledgesSchema: Map<
+const narrativesSchema: Map<
   string,
   {
     title: string;
@@ -12,7 +12,7 @@ const knoledgesSchema: Map<
   [
     "esp",
     {
-      title: "Formación y conocimientos",
+      title: "A lo largo del camino...",
       epigrafe: "Saber hacer",
       section: [
         {
@@ -27,9 +27,9 @@ const knoledgesSchema: Map<
         {
           subtitle: "Psicologo organizacional",
           text: [
-            "Me formé en psicología clínica, laboral y organizacional, con experiencia en procesos de aprendizaje e innovación institucional, selección de personal, diseño de procesos productivos de conocimiento y sistemas de evaluación.",
+            "Me formé en psicología clínica, laboral y organizacional, con experiencia en procesos de aprendizaje e innovación organizacional, selección de personal, diseño de procesos productivos de conocimiento y sistemas de evaluación.",
             "Esta perspectiva me permite integrar la dimensión humana en proyectos digitales, aportando cercanía y comprensión de las dinámicas organizacionales.",
-            "También es un recurso para facilitar entornos basados en mentalidad agil o procesos de cambio organizacional planificado.",
+            "También es un recurso para facilitar entornos basados en mentalidad agil y procesos de cambio organizacional planificado.",
           ],
         },
         {
@@ -46,7 +46,7 @@ const knoledgesSchema: Map<
   [
     "eng",
     {
-      title: "Training and knowledge",
+      title: "Along the journey...",
       epigrafe: "Know how",
       section: [
         {
@@ -63,7 +63,7 @@ const knoledgesSchema: Map<
           text: [
             "I have a background in clinical, industrial, and organizational psychology, with experience in institutional learning and innovation processes, personnel selection, knowledge-based production process design, and evaluation systems.",
             "This perspective allows me to integrate the human dimension into digital projects, bringing a personal touch and understanding of organizational dynamics.",
-            "It also provides valuable resources for facilitating environments based on agile mindsets or planned organizational change processes.",
+            "It also provides valuable resources for facilitating environments based on agile mindsets and planned organizational change processes.",
           ],
         },
         {
@@ -79,4 +79,4 @@ const knoledgesSchema: Map<
   ],
 ]);
 
-export default knoledgesSchema;
+export default narrativesSchema;
