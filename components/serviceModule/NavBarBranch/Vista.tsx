@@ -26,8 +26,11 @@ const NavBarButtonPad: React.FC<NavBarButtonPadProps> = ({
       : manager({ language: "esp" });
   };
   const btnSchema = new Map([
-    ["esp", { view1: "Proyectos", view2: "Saber hacer" }],
-    ["eng", { view1: "Proyects", view2: "Know how" }],
+    [
+      "esp",
+      { view1: "Proyectos", view2: "Stack tecnológico", view3: "Saber hacer" },
+    ],
+    ["eng", { view1: "Proyects", view2: "Tech stack", view3: "Know how" }],
   ]);
   return (
     <div className="flex">
@@ -35,10 +38,20 @@ const NavBarButtonPad: React.FC<NavBarButtonPadProps> = ({
         <ButtonGlobal
           type="button"
           icon={<SiSololearn />}
+          label={btnSchema.get(language)?.view3}
+          handler={() =>
+            document
+              .getElementById("narrative")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
+        />
+        <ButtonGlobal
+          type="button"
+          icon={<GiPropellerBeanie />}
           label={btnSchema.get(language)?.view2}
           handler={() =>
             document
-              .getElementById("target")
+              .getElementById("techs")
               ?.scrollIntoView({ behavior: "smooth" })
           }
         />

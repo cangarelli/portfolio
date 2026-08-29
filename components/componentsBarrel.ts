@@ -1,4 +1,15 @@
+export { default as AnimationAvatar } from "./serviceModule/BrandingBranch/AnimationAvatar";
+
+export { default as TimeLineModel } from "./portfolioModule/timeLineBranch/Model";
+export { default as TimeLime } from "./portfolioModule/timeLineBranch/Negocio";
+export { default as TimeLineRow } from "./portfolioModule/timeLineBranch/Vista";
+
 // Portfolio module
+
+/* Techs Branch */
+export { default as TechsListModel } from "./portfolioModule/TechsBranch/Model";
+export { default as TechsList } from "./portfolioModule/TechsBranch/Negocio";
+export { default as TechsIndividualLayer } from "./portfolioModule/TechsBranch/Vista";
 
 /* Narrative Branch */
 export { default as NarrativeModel } from "./portfolioModule/narrativeBranch/Modelo";

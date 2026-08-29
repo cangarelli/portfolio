@@ -11,7 +11,7 @@ const proyectsSchema: Map<
       logo: StaticImageData;
       logoSize: number;
       url: string;
-      description: string;
+      description: string[];
     }>;
   }
 > = new Map([
@@ -26,14 +26,25 @@ const proyectsSchema: Map<
           logo: CuCoLogo,
           logoSize: 200,
           url: "https://cultura-conecta.vercel.app/",
-          description: "Plataforma dedicada a visibilizar, promover y gestionar eventos culturales regionales conectando a creadores culturales con audiencias interesadas en vivir experiencias auténticas.",
+          description: [
+            "Plataforma dedicada a visibilizar, promover y gestionar eventos culturales regionales.",
+            "Gestiona cobros y reintegros en fomato marketplace.",
+            "Brinda recomendaciones por geolocalización e historial de interacciones.",
+            "Cumple con los estandares de las normas ISO 27001 en gestión de la información.",
+          ],
         },
         {
           name: "Guia de intervención en crisis comunitaria",
           logo: GICLogo,
           logoSize: 100,
           url: "https://gic-lp.vercel.app/",
-          description: "Web app destinada a fortalecer la red del sistema de salud público y privado de salud mental de la provincia de La Pampa en el abordaje de las situaciones de crisis y/o urgencia. Es un medio para fomentar la construcción de redes asistenciales y para la promoción de ambientes comunitarios más saludables.",
+          description: [
+            "Aplicación web para fortalecer la red del sistema de salud público y privado de salud mental de la provincia de La Pampa en el abordaje de las situaciones de crisis y/o urgencia.",
+            "Permite la gestión de acceso restringido por roles para la administración de información.",
+            "Tiene un buscador por claves semanticas del contenido.",
+            "La guia computa de manera interacctiva escalas de riesgo para facilitar información pertinente.",
+            "Pensada para la actualización y la mejora continua.",
+          ],
         },
       ],
     },
@@ -41,7 +52,7 @@ const proyectsSchema: Map<
   [
     "eng",
     {
-      title: "Some projects developed",
+      title: "Some developed projects",
       subtitle: "Experiences bringing imagination to life",
       proyects: [
         {
@@ -49,14 +60,25 @@ const proyectsSchema: Map<
           logo: CuCoLogo,
           logoSize: 200,
           url: "https://cultura-conecta.vercel.app/",
-          description: "Platform dedicated to showcase, promote, and manage regional cultural events, connecting cultural creators with audiences interested in experiencing authentic moments.",
+          description: [
+            "Platform dedicated to showcasing, promoting, and managing regional cultural events.",
+            "Manage collections and refunds as marketplace.",
+            "Gives recommendations based on geolocation and interaction history.",
+            "It complies with the ISO 27001 standards for information management.",
+          ],
         },
         {
           name: "Guia de intervención en crisis comunitaria",
           logo: GICLogo,
           logoSize: 100,
           url: "https://gic-lp.vercel.app/",
-          description: "Web app aimed at strengthening the network of the public and private mental health system in the province of La Pampa in dealing with crisis and/or emergency situations. It's a tool to encourage the building of care networks and to promote healthier community environments.",
+          description: [
+            "Web application to strengthen the network of the public and private mental health system in the province of La Pampa in handling crisis and/or emergency situations",
+            "Allows role-based rescrticted access management for information administration.",
+            "Has a search tool for semantic content keywords.",
+            "The guide interactively computes risk scales to provide relevant information.",
+            "Designed for updating and continuous improvement.",
+          ],
         },
       ],
     },

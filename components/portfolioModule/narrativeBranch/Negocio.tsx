@@ -9,7 +9,7 @@ interface NarrativeProps {
 
 const Narrative: React.FC<NarrativeProps> = ({ data }) => {
   return (
-    <div className="w-screen bg-gradient-to-b from-purple-50 to-purple-500 rounded-lg">
+    <div className="w-screen pb-6 bg-gradient-to-b from-purple-50 to-purple-500 rounded-lg">
       <div className={`mt-4 flex flex-col items-center justify-center`}>
         <Typography type="mainTitle" text={data.title} />
         <Typography type="subtitle" text={data.epigrafe} />

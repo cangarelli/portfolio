@@ -5,7 +5,7 @@ import React from "react";
 interface ProyectsCardProps {
   logo: StaticImageData;
   logoSize: number;
-  description: string;
+  description: string[];
   url: string;
 }
 
@@ -17,7 +17,7 @@ const ProyectsCard: React.FC<ProyectsCardProps> = ({
 }) => {
   return (
     <a
-      className="flex flex-col flex-grow items-center justify-start // size-full p-2 mb-2 // rounded-lg shadow-xl"
+      className=":second-child // flex flex-col flex-grow items-center justify-start // size-full p-2 mb-2 // rounded-lg shadow-xl"
       href={url}
     >
       <Image
@@ -27,7 +27,16 @@ const ProyectsCard: React.FC<ProyectsCardProps> = ({
         height={logoSize}
         alt="Web site logo"
       />
-      <Typography type="bodyJustify" bgStyle="my-4" text={description} />
+      <ul
+        role="list"
+        className="list-disc marker:text-green-700 flex flex-col items-center justify-start"
+      >
+        {description.map((elm, i) => (
+          <li key={`${i}-5`} className="first:list-none first:w-full w-4/5 ">
+            <Typography type="bodyJustify" bgStyle="my-4" text={elm} />
+          </li>
+        ))}
+      </ul>
     </a>
   );
 };
