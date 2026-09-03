@@ -66,15 +66,15 @@ const Typography: React.FC<TipographyProps> = ({
       {type === "mainTitle" ? (
         <h1 className={typeStyles[type]?.tStyle}>{text}</h1>
       ) : type === "title" ? (
-        <h2 className={typeStyles[type]?.tStyle}>{text}</h2>
+        <h1 className={typeStyles[type]?.tStyle}>{text}</h1>
       ) : type === "subtitle" ? (
-        <h3 className={typeStyles[type]?.tStyle}>{text}</h3>
+        <h1 className={typeStyles[type]?.tStyle}>{text}</h1>
       ) : type === "bodyCenter" ? (
-        <h4 className={typeStyles[type]?.tStyle}>{text}</h4>
+        <h2 className={typeStyles[type]?.tStyle}>{text}</h2>
       ) : type === "bodyJustify" ? (
-        <h5 className={typeStyles[type]?.tStyle}>{text}</h5>
+        <h2 className={typeStyles[type]?.tStyle}>{text}</h2>
       ) : type === "comment" ? (
-        <h6 className={typeStyles[type]?.tStyle}>{text}</h6>
+        <h3 className={typeStyles[type]?.tStyle}>{text}</h3>
       ) : type === "accesory" ? (
         <p className={typeStyles[type]?.tStyle}>{text}</p>
       ) : (

@@ -57,6 +57,7 @@ const Proyects: React.FC<ProyectsProps> = ({ data }) => {
   const animateDarknessBg = `transition-colors duration-600 ease-in-out ${isLighted ? "bg-gradient-to-b from-teal-50 to-teal-500 " : "bg-gradient-to-b from-teal-50 to-black"}`;
   const animateLigth = `transition-opacity duration-600 ease-in-out ${isLighted ? "opacity-100" : "opacity-0"}`;
   const animateDarkness = `transition-colors duration-600 ease-in-out ${isLighted ? "bg-white" : "bg-black"}`;
+  const animateAvatar = `transition-transform duration-1600 ease-in-out translate-y-40 group-hover:translate-y-15  `;
 
   return (
     <div
@@ -69,7 +70,7 @@ const Proyects: React.FC<ProyectsProps> = ({ data }) => {
       {/* <Image src={picture} height={200} alt="Ilustración decorativa"/> */}
 
       <div
-        className={`group invisible md:visible ${isLighted ? "fixed  -bottom-10 -left-5 " : "absolute -bottom-10 -left-15"} origin-center scale-45`}
+        className={`group  invisible md:visible ${isLighted ? "fixed  -bottom-15 -left-5 " : "absolute -bottom-10 -left-15"} origin-center scale-45`}
       >
         {/* Lamp */}
         <div className="origin-center relative z-50 flex items-center justify-center">
@@ -90,14 +91,18 @@ const Proyects: React.FC<ProyectsProps> = ({ data }) => {
           className={`aspect-video // border rounded-full //  origin-center -translate-y-1/8 translate-x-1/4 // ${animateLigth} // opacity-25 dark:opacity-5 // absolute // top-2  -right-10 // h-50 w-50 //  bg-yellow-500 bg-gradient-radial from-amber-300 via-amber-300/50 to-transparent // blur-2xl`}
         ></div>
         {/* Avatar */}
-        <Image
-          className={`relative top-10 -left-5 // border-b-4 shadow-lg//  scale-85  // ${animateLigth}`}
-          src={avatar}
-          alt="avatar"
-        />
-        <span className="absolute -right-8 top-15 mt-2 text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          ¡Eureka!
-        </span>
+        <div
+          className={`relative left-5   overflow-y-hidden overflow-x-clip // border-b-2 border-black rounded-lg`}
+        >
+          <Image
+            className={`relative ${animateAvatar} // border-b-4 shadow-lg //  scale-85  // ${animateLigth}`}
+            src={avatar}
+            alt="avatar"
+          />
+          <span className="absolute -right-8 top-15 mt-2 text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            ¡Eureka!
+          </span>
+        </div>
       </div>
       <div
         ref={divRef}

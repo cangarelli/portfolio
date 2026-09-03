@@ -30,7 +30,7 @@ const proyectsSchema: Map<
             "Plataforma dedicada a visibilizar, promover y gestionar eventos culturales regionales.",
             "Gestiona cobros y reintegros en fomato marketplace.",
             "Brinda recomendaciones por geolocalización e historial de interacciones.",
-            "Cumple con los estandares de las normas ISO 27001 en gestión de la información.",
+            "Cumple con los estándares ISO 27001 para controles de seguridad técnica en la gestión de la información.",
           ],
         },
         {
@@ -64,7 +64,7 @@ const proyectsSchema: Map<
             "Platform dedicated to showcasing, promoting, and managing regional cultural events.",
             "Manage collections and refunds as marketplace.",
             "Gives recommendations based on geolocation and interaction history.",
-            "It complies with the ISO 27001 standards for information management.",
+            "It complies with the ISO 27001 standards for technical security controls in information management.",
           ],
         },
         {

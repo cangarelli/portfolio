@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { Dekko, Inter, Jost } from "next/font/google";
+import { Dekko, Jost } from "next/font/google";
 import "./globals.css";
 import { UPreferenceProvider } from "./contexts/userPreferenceContext";
 import { NavBarModule } from "@/components/componentsBarrel";
 const deko = Dekko({ weight: ["400"], subsets: ["latin"] });
 const jost = Jost({ weight: ["400", "800"], subsets: ["latin"] });
-const inter = Inter({ weight: ["400", "800"], subsets: ["latin"] });
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "AG - Portfolio",
   description: "Sitio web de presentación personal",
 };
 

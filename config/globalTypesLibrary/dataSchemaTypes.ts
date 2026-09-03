@@ -13,5 +13,9 @@ export type GeneralSectionData = SectionBase | GeneralSectionWithImage;
 export type GeneralSChema = {
   title: string;
   epigrafe: string;
-  section: Array<GeneralSectionData>;
+  section: {
+    Psi: GeneralSectionData;
+    Dev: GeneralSectionData;
+    Atitud: GeneralSectionData;
+  };
 };

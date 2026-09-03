@@ -1,3 +1,11 @@
+export { default as ServicesModel } from "./portfolioModule/servicesBranch/Model";
+export { default as Services } from "./portfolioModule/servicesBranch/Negocio";
+export { default as ServicesCard } from "./portfolioModule/servicesBranch/Vista";
+
+export { default as Carousel } from "./serviceModule/carrouselBranch/Carousel";
+export { default as CarrouselButtonPad } from "./serviceModule/carrouselBranch/CarrouselButtonPad";
+export { default as CarrouselPositionMarker } from "./serviceModule/carrouselBranch/CarrouselPositionMarker";
+
 export { default as AnimationAvatar } from "./serviceModule/BrandingBranch/AnimationAvatar";
 
 export { default as TimeLineModel } from "./portfolioModule/timeLineBranch/Model";

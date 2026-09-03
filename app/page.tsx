@@ -6,6 +6,7 @@ import {
   TechsListModel,
   TimeLineModel,
   AnimationAvatar,
+  ServicesModel,
 } from "@/components/componentsBarrel";
 import { useContext } from "react";
 import { UserPreferenceContext } from "./contexts/userPreferenceContext";

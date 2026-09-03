@@ -14,11 +14,25 @@ const Narrative: React.FC<NarrativeProps> = ({ data }) => {
         <Typography type="mainTitle" text={data.title} />
         <Typography type="subtitle" text={data.epigrafe} />
       </div>
+      <div
+        className={`flex items-center justify-center max-w-2xl mx-auto my-4 `}
+      >
+        <NarrativesColumn
+          subtitle={data.section.Dev.subtitle}
+          text={data.section.Dev.text}
+        />
+      </div>
 
-      <div className={`grid grid-cols-3 max-w-2xl mx-auto  `}>
-        {data.section.map((col, i) => (
-          <NarrativesColumn key={i} subtitle={col.subtitle} text={col.text} />
-        ))}
+      <div className={`grid grid-cols-2  gap-4 max-w-2xl mx-auto  `}>
+        <NarrativesColumn
+          subtitle={data.section.Psi.subtitle}
+          text={data.section.Psi.text}
+        />
+
+        <NarrativesColumn
+          subtitle={data.section.Atitud.subtitle}
+          text={data.section.Atitud.text}
+        />
       </div>
     </div>
   );

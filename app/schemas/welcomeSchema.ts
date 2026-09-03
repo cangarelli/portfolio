@@ -10,17 +10,20 @@ const welcomeSchema: Map<
     "esp",
     {
       title: "¡Hola! Soy Andrés",
-      subTitle: "Un desarrollador web full stack, independiente y creativo",
+      subTitle:
+        "Desarrollador web full stack creativo impulsando emprendimientos a traves de micro servicios SaaS",
       comentary:
-        "Vamos a descubrir todas las maneras en las que puedo potenciar tu negocio.",
+        "Soluciones practicas, plataformas escalables e integrales. Utilizo  la última tecnología y te acompaño a proyectar la imagen que necesitas.",
     },
   ],
   [
     "eng",
     {
       title: "¡Hi! I'm Andrés",
-      subTitle: "A creative, freelance full stack web developer",
-      comentary: "Let's find out all the ways I can boost your business.",
+      subTitle:
+        "Creative full stack web developer driving startups through SaaS microservices",
+      comentary:
+        "Practical solutions, scalable and comprehensive platforms. I use the latest technology and help you project the image you need.",
     },
   ],
 ]);

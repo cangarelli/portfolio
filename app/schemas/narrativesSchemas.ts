@@ -3,19 +3,23 @@ const narrativesSchema: Map<
   {
     title: string;
     epigrafe: string;
-    section: Array<{
-      subtitle: string;
-      text: Array<string>;
-    }>;
+    section: {
+      Psi: { subtitle: string; text: Array<string> };
+      Dev: { subtitle: string; text: Array<string> };
+      Atitud: {
+        subtitle: string;
+        text: Array<string>;
+      };
+    };
   }
 > = new Map([
   [
     "esp",
     {
-      title: "A lo largo del camino...",
+      title: "Sobre mi y mi recorrido...",
       epigrafe: "Saber hacer",
-      section: [
-        {
+      section: {
+        Psi: {
           subtitle: "Psicologo organizacional",
           text: [
             "Me formé en psicología clínica, laboral y organizacional, con experiencia en procesos de aprendizaje e innovación organizacional, selección de personal, diseño de procesos productivos de conocimiento y sistemas de evaluación.",
@@ -23,26 +27,26 @@ const narrativesSchema: Map<
             "También es un recurso para facilitar entornos de producción de conocimiento y procesos de cambio organizacional planificado.",
           ],
         },
-        {
+        Dev: {
           subtitle: "Desarrollador web Full-Stack",
           text: [
-            "Domino lenguajes base como HTML, CSS y JavaScript, junto con gestión de bases de datos NoSQL. ",
+            "Domino lenguajes base como HTML, CSS,  JavaScript y typeScript, junto con gestión de bases de datos NoSQL.",
             "Trabajo con frameworks modernos y emprendo procesos continuos de descubrimiento de las últimas y mejores técnologias disponibles para cada proyecto.",
-            "Gestiono procesos de testing automatizado y CI/CD pipelines a través de entornos como GitHub.",
+            "Construyo sitios con procesos de gestion automatizados, con integración con inteligencia artificial y con sistemas de pago integrados.",
             "Mi enfoque está en escalabilidad, seguridad y resultados medibles, alineados con objetivos de negocio.",
           ],
         },
 
-        {
+        Atitud: {
           subtitle: "Auto-didacta e investigador",
           text: [
             "Soy una persona curiosa y proactiva: siempre busco mejores formas de realizar las tareas que emprendo.",
-            "Aprendí de manera autodidacta a trabajar con TypeScript, frameworks como Next.js y Tailwind.", 
+            "Aprendí de manera autodidacta a trabajar con TypeScript y a utilizar frameworks como Next.js y Tailwind.",
             "También a implementar sistemas de recomendación basados en interacciones y geolocalización, y gestionar cobros y reintegros con los SDK de Mercado Pago.",
             "Mi enfoque está en aprender, experimentar y transformar ese conocimiento en soluciones prácticas.",
           ],
         },
-      ],
+      },
     },
   ],
   [
@@ -50,8 +54,8 @@ const narrativesSchema: Map<
     {
       title: "Along the journey...",
       epigrafe: "Know how",
-      section: [
-        {
+      section: {
+        Psi: {
           subtitle: "Organizational psychologist",
           text: [
             "I have a background in clinical, industrial, and organizational psychology, with experience in institutional learning and innovation processes, personnel selection, knowledge-based production process design, and evaluation systems.",
@@ -59,17 +63,17 @@ const narrativesSchema: Map<
             "It also provides valuable resources for facilitating environments based on agile mindsets and planned organizational change processes.",
           ],
         },
-        {
+        Dev: {
           subtitle: "Full stack web developer",
           text: [
-            "I received practical and theoretical training in languages such as HTML, CSS, and JavaScript, and in NoSQL database management.",
+            "I master languages like HTML, CSS, JavaScript, and TypeScript, along with NoSQL database management.",
             "Specialized in frameworks like React, Sass, Express, NestJS, and Handlebars, and in building e-commerce sites with integrated payment systems.",
-            "Manage automated testing processes and CI/CD pipelines through environments like GitHub.",
+            "I build sites with automated management processes, AI integration, and integrated payment systems.",
             "I also delved into modern architectures with TypeScript, Next.js, Tailwind and image managment with Cloudinary, applying best practices for scalability and security.",
           ],
         },
 
-        {
+        Atitud: {
           subtitle: "Self-taught and researcher",
           text: [
             "I'm a curious and proactive person: I'm always looking for better ways to accomplish the tasks I undertake.",
@@ -77,7 +81,7 @@ const narrativesSchema: Map<
             "My focus is on learning, experimenting, and transforming that knowledge into practical solutions.",
           ],
         },
-      ],
+      },
     },
   ],
 ]);

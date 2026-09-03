@@ -25,8 +25,9 @@ const AnimationAvatar: React.FC<{}> = ({}) => {
       if (ref.current) observer.unobserve(ref.current);
     };
   }, []);
-  const animateLigth = `transition-opacity duration-600 ease-in-out ${isLighted ? "opacity-100" : "opacity-0"}`;
-  const animateDarkness = `transition-colors duration-600 ease-in-out ${isLighted ? "bg-white" : "bg-black"}`;
+  const animateLigth = `transition-opacity duration-600 ease-in-out  ${isLighted ? "opacity-100" : "opacity-0"}`;
+  const animateDarkness = `transition-colors duration-600 ease-in-out hover:bg-black ${isLighted ? "bg-white" : "bg-black"}`;
+  const animateAvatar = `transition-transform duration-600 ease-in-out -top-100 hover:top-10 -left-5 `;
   return (
     <div
       ref={ref}
@@ -52,7 +53,7 @@ const AnimationAvatar: React.FC<{}> = ({}) => {
       ></div>
       {/* Avatar */}
       <Image
-        className={`relative top-10 -left-5 //  scale-85  // ${animateLigth}`}
+        className={`relative ${animateAvatar} //  scale-85  // ${animateLigth}`}
         src={avatar}
         alt="avatar"
       />

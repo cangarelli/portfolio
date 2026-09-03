@@ -16,7 +16,7 @@ const contentSecurityPolicyBuilder = (): {
       frame-src 'self';
       script-src 'self' 'nonce-${nonce}' 'strict-dynamic';
       style-src 'self' 'unsafe-inline';
-      img-src 'self';
+      img-src 'self' data: blob:;
       font-src 'self';
       object-src 'none';
       base-uri 'self';

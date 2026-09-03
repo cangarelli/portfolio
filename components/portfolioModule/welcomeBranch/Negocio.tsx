@@ -8,7 +8,11 @@ import decoracion1 from "@/app/assets/png/decoracion1.png";
 import decoracion2 from "@/app/assets/svg/decoracion2.svg";
 
 // Componentes internos
-import { Typography, WelcomeIlustration } from "@/components/componentsBarrel";
+import {
+  ServicesModel,
+  Typography,
+  WelcomeIlustration,
+} from "@/components/componentsBarrel";
 
 interface Welcom {
   title: string;
@@ -31,13 +35,25 @@ const Welcome: React.FC<Welcom> = ({ title, subTitle, comentary }) => {
               height={100}
               width={200}
             />
-            <WelcomeIlustration img={retratoGhibli} height={150} width={150} />
+            <WelcomeIlustration
+              style=""
+              img={retratoGhibli}
+              height={150}
+              width={150}
+            />
           </div>
         </div>
       </div>
-      <div className="pt-15 pb-5 bg-gradient-to-b from-blue-0 to-blue-500 flex flex-col items-center justify-center gap-2">
-        <Typography type="bodyCenter" text={comentary} />
-        <WelcomeIlustration style="my-5" img={decoracion2} />
+      <div className="pt-15 pb-5  bg-gradient-to-b from-blue-0 to-blue-500 flex flex-col items-center justify-center gap-2">
+        <div className="max-w-2xl flex flex-col items-center justify-center">
+          <Typography
+            type="bodyCenter"
+            bgStyle=" max-w-2xl my-15 "
+            text={comentary}
+          />
+          <ServicesModel language={"esp"} />
+          <WelcomeIlustration style="my-5" img={decoracion2} />
+        </div>
       </div>
     </div>
   );
