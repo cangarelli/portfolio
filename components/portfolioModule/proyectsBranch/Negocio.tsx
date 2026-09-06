@@ -47,6 +47,10 @@ const Proyects: React.FC<ProyectsProps> = ({ data }) => {
     };
   }, []);
 
+  useEffect(() => {
+    console.log(isLighted);
+  }, [isLighted]);
+
   const dataProyUpdate = data.proyects.toSpliced(
     1,
     0,
@@ -54,14 +58,14 @@ const Proyects: React.FC<ProyectsProps> = ({ data }) => {
     <AnimationAvatar key="Random" />,
   );
 
-  const animateDarknessBg = `transition-colors duration-600 ease-in-out ${isLighted ? "bg-gradient-to-b from-teal-50 to-teal-500 " : "bg-gradient-to-b from-teal-50 to-black"}`;
-  const animateLigth = `transition-opacity duration-600 ease-in-out ${isLighted ? "opacity-100" : "opacity-0"}`;
-  const animateDarkness = `transition-colors duration-600 ease-in-out ${isLighted ? "bg-white" : "bg-black"}`;
-  const animateAvatar = `transition-transform duration-1600 ease-in-out translate-y-40 group-hover:translate-y-15  `;
+  const animateDarknessBg = `transition-colors duration-600 ease-in-out ${isLighted ? "bg-linear-to-b from-teal-50 to-teal-500 " : "bg-linear-to-b from-teal-50 to-black"}`;
+  const animateLigth = `transition-opacity duration-600 ease-in-out ${isLighted ? "opacity-100" : "opacity-0 pointer-events-none"}`;
+  const animateDarkness = `transition-colors duration-700 ease-in-out ${isLighted ? "bg-white" : "bg-black"}`;
+  const animateAvatar = `transition-transform duration-1000 ease-in-out translate-y-40 group-hover:translate-y-15  `;
 
   return (
     <div
-      className={`size-full pt-10 pb-5// relative  // ${animateDarknessBg}  // flex flex-col items-center justify-center`}
+      className={`size-full pt-10 pb-5// relative  // transition-colors duration-600 ease-in-out  ${isLighted ? "bg-linear-to-b from-teal-50 to-teal-500 " : "bg-linear-to-b from-teal-50 to-black"} // flex flex-col items-center justify-center`}
     >
       <div className="flex flex-col items-center justify-center">
         <Typography type="title" text={data.title} />
@@ -70,12 +74,12 @@ const Proyects: React.FC<ProyectsProps> = ({ data }) => {
       {/* <Image src={picture} height={200} alt="Ilustración decorativa"/> */}
 
       <div
-        className={`group  invisible md:visible ${isLighted ? "fixed  -bottom-15 -left-5 " : "absolute -bottom-10 -left-15"} origin-center scale-45`}
+        className={`group  invisible md:visible ${isLighted ? "fixed -bottom-15 -left-5 " : "absolute -bottom-10 -left-15"} origin-center scale-45`}
       >
         {/* Lamp */}
         <div className="origin-center relative z-50 flex items-center justify-center">
           <Image
-            className={`${animateLigth} // absolute -top-13 left-15 origin-center scale-40 rotate-180 `}
+            className={`${isLighted ? "opacity-100" : "opacity-0 pointer-events-none"} //  transition-opacity duration-600 ease-in-out // absolute -top-13 left-15 origin-center scale-40 rotate-180 `}
             src={lampOn}
             alt="lamp On"
           />
@@ -88,14 +92,14 @@ const Proyects: React.FC<ProyectsProps> = ({ data }) => {
         {/* Ligth */}
         <div
           aria-hidden="true"
-          className={`aspect-video // border rounded-full //  origin-center -translate-y-1/8 translate-x-1/4 // ${animateLigth} // opacity-25 dark:opacity-5 // absolute // top-2  -right-10 // h-50 w-50 //  bg-yellow-500 bg-gradient-radial from-amber-300 via-amber-300/50 to-transparent // blur-2xl`}
+          className={`aspect-video // border rounded-full //  origin-center -translate-y-1/8 translate-x-1/4 // ${isLighted ? "opacity-100" : "opacity-0 pointer-events-none"} //  transition-opacity duration-600 ease-in-out // opacity-25 dark:opacity-5 // absolute // top-2  -right-10 // h-50 w-50 //  bg-yellow-500 bg-gradient-radial from-amber-300 via-amber-300/50 to-transparent // blur-2xl`}
         ></div>
         {/* Avatar */}
         <div
           className={`relative left-5   overflow-y-hidden overflow-x-clip // border-b-2 border-black rounded-lg`}
         >
           <Image
-            className={`relative ${animateAvatar} // border-b-4 shadow-lg //  scale-85  // ${animateLigth}`}
+            className={`relative // transition-transform duration-1000 ease-in-out translate-y-40 group-hover:translate-y-15  // border-b-4 shadow-lg //  scale-85  // ${isLighted ? "opacity-100" : "opacity-0 pointer-events-none"} // transition-opacity duration-600 ease-in-out `}
             src={avatar}
             alt="avatar"
           />

@@ -28,7 +28,7 @@ const contentSecurityPolicyBuilder = (): {
       default-src 'self' ;
       connect-src 'self';
       frame-src 'self';
-      script-src 'self' 'unsafe-eval' 'nonce-${nonce}' 'strict-dynamic' ;
+      script-src 'self' 'unsafe-eval' 'nonce-${nonce}' 'strict-dynamic';
       style-src 'self' 'unsafe-inline';
       img-src 'self';
       font-src 'self';
