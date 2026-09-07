@@ -8,7 +8,7 @@ interface ServicesModelProps {
 }
 
 const ServicesModel: React.FC<ServicesModelProps> = ({ language }) => {
-  return <Services />;
+  return <Services language={language} />;
 };
 
 export default ServicesModel;

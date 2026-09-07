@@ -7,6 +7,7 @@ import { GiStarFormation } from "react-icons/gi";
 import { BsViewList } from "react-icons/bs";
 import { SiSololearn } from "react-icons/si";
 import { GiPropellerBeanie } from "react-icons/gi";
+import { MdMilitaryTech } from "react-icons/md";
 
 import { FaGithub } from "react-icons/fa";
 import { Language } from "@/config/globalTypesLibrary/globalTypesBarrel";
@@ -28,9 +29,9 @@ const NavBarButtonPad: React.FC<NavBarButtonPadProps> = ({
   const btnSchema = new Map([
     [
       "esp",
-      { view1: "Proyectos", view2: "Stack tecnológico", view3: "Saber hacer" },
+      { view1: "Proyectos", view2: "Stack tecnológico", view3: "Sobre mi" },
     ],
-    ["eng", { view1: "Proyects", view2: "Tech stack", view3: "Know how" }],
+    ["eng", { view1: "Proyects", view2: "Tech stack", view3: "About me" }],
   ]);
   return (
     <div className="flex">
@@ -57,7 +58,7 @@ const NavBarButtonPad: React.FC<NavBarButtonPadProps> = ({
         />
         <ButtonGlobal
           type="button"
-          icon={<GiPropellerBeanie />}
+          icon={<MdMilitaryTech />}
           label={btnSchema.get(language)?.view1}
           handler={() =>
             document

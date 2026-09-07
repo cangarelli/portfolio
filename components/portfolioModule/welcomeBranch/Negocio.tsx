@@ -13,16 +13,18 @@ import {
   Typography,
   WelcomeIlustration,
 } from "@/components/componentsBarrel";
+import { Language } from "@/config/globalTypesLibrary/globalTypesBarrel";
 
 interface Welcom {
   title: string;
   subTitle: string;
   comentary: string;
+  language: Language
 }
-const Welcome: React.FC<Welcom> = ({ title, subTitle, comentary }) => {
+const Welcome: React.FC<Welcom> = ({ title, subTitle, comentary, language }) => {
   return (
     <div className="size-full shadow-xl">
-      <div className="w-full bg-gradient-to-b from-blue-300 to-blue-0 flex flex-col items-center justify-center">
+      <div className="w-full bg-linear-to-b from-blue-300 to-blue-0 flex flex-col items-center justify-center">
         <div className="max-w-2xl my-10 // flex items-center justify-betweem">
           <div className="my-5 w-full // flex flex-col items-start justify-start">
             <Typography type="mainTitle" text={title} />
@@ -44,14 +46,14 @@ const Welcome: React.FC<Welcom> = ({ title, subTitle, comentary }) => {
           </div>
         </div>
       </div>
-      <div className="pt-15 pb-5  bg-gradient-to-b from-blue-0 to-blue-500 flex flex-col items-center justify-center gap-2">
+      <div className="pt-15 pb-5  bg-linear-to-b from-blue-0 to-blue-500 flex flex-col items-center justify-center gap-2">
         <div className="max-w-2xl flex flex-col items-center justify-center">
           <Typography
             type="bodyCenter"
             bgStyle=" max-w-2xl my-15 "
             text={comentary}
           />
-          <ServicesModel language={"esp"} />
+          <ServicesModel language={language} />
           <WelcomeIlustration style="my-5" img={decoracion2} />
         </div>
       </div>

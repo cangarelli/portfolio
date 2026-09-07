@@ -1,5 +1,9 @@
 "use client";
 import React, { ReactElement, ReactNode } from "react";
+import { FaRegArrowAltCircleRight, FaRegArrowAltCircleLeft  } from "react-icons/fa";
+
+
+
 interface CarrouselButtonPadProps {
   children: ReactElement;
   next: () => void;
@@ -20,7 +24,7 @@ const CarrouselButtonPad: React.FC<CarrouselButtonPadProps> = ({
         className="cursor-pointer // flex items-center justify-start // z-20 // h-full w-1/2 // absolute inset-y-0 left-0  origin-center // rounded-l-lg // py-1 px-3 grow // font-black"
       >
         <span className="rounded-full text-black py-1 px-2">
-          {arrows?.prev ? arrows.prev : "<"}
+          {arrows?.prev ? arrows.prev : <FaRegArrowAltCircleLeft />}
         </span>
       </button>
       {children}
@@ -29,7 +33,7 @@ const CarrouselButtonPad: React.FC<CarrouselButtonPadProps> = ({
         className="cursor-pointer // flex items-center justify-end // z-20 // h-full w-1/2 // absolute inset-y-0 right-0  origin-center //  rounded-r-lg // py-1 px-3 grow // font-black"
       >
         <span className="rounded-full text-black py-1 px-2">
-          {arrows?.next ? arrows.next : ">"}
+          {arrows?.next ? arrows.next : <FaRegArrowAltCircleRight />}
         </span>
       </button>
     </div>

@@ -22,7 +22,7 @@ const narrativesSchema: Map<
         Psi: {
           subtitle: "Psicologo organizacional",
           text: [
-            "Me formé en psicología clínica, laboral y organizacional, con experiencia en procesos de aprendizaje e innovación organizacional, selección de personal, diseño de procesos productivos de conocimiento y sistemas de evaluación.",
+            "Me formé en psicología clínica, laboral y organizacional, con experiencia en procesos de aprendizaje e innovación organizacional, reclutamiento selección de personal, diseño de procesos productivos de conocimiento y sistemas de evaluación.",
             "Esta perspectiva me permite integrar la dimensión humana en proyectos digitales, aportando cercanía y comprensión de las dinámicas organizacionales.",
             "También es un recurso para facilitar entornos de producción de conocimiento y procesos de cambio organizacional planificado.",
           ],
@@ -52,13 +52,13 @@ const narrativesSchema: Map<
   [
     "eng",
     {
-      title: "Along the journey...",
+      title: "About me and my journey...",
       epigrafe: "Know how",
       section: {
         Psi: {
           subtitle: "Organizational psychologist",
           text: [
-            "I have a background in clinical, industrial, and organizational psychology, with experience in institutional learning and innovation processes, personnel selection, knowledge-based production process design, and evaluation systems.",
+            "I have a background in clinical, industrial, and organizational psychology, with experience in institutional learning and innovation processes, recruitment and selection of staff, knowledge-based production process design, and evaluation systems.",
             "This perspective allows me to integrate the human dimension into digital projects, bringing a personal touch and understanding of organizational dynamics.",
             "It also provides valuable resources for facilitating environments based on agile mindsets and planned organizational change processes.",
           ],

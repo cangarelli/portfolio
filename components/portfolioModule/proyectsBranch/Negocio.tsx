@@ -74,7 +74,7 @@ const Proyects: React.FC<ProyectsProps> = ({ data }) => {
       {/* <Image src={picture} height={200} alt="Ilustración decorativa"/> */}
 
       <div
-        className={`group  invisible md:visible ${isLighted ? "fixed -bottom-15 -left-5 " : "absolute -bottom-10 -left-15"} origin-center scale-45`}
+        className={`group  invisible md:visible // ${isLighted ? "fixed -bottom-15 -left-5 " : "absolute -bottom-10 -left-15"} origin-center scale-45`}
       >
         {/* Lamp */}
         <div className="origin-center relative z-50 flex items-center justify-center">
@@ -96,14 +96,14 @@ const Proyects: React.FC<ProyectsProps> = ({ data }) => {
         ></div>
         {/* Avatar */}
         <div
-          className={`relative left-5   overflow-y-hidden overflow-x-clip // border-b-2 border-black rounded-lg`}
+          className={`relative left-5 overflow-y-hidden overflow-x-clip min-w-max w-full // border-b-2 border-black rounded-lg`}
         >
           <Image
-            className={`relative // transition-transform duration-1000 ease-in-out translate-y-40 group-hover:translate-y-15  // border-b-4 shadow-lg //  scale-85  // ${isLighted ? "opacity-100" : "opacity-0 pointer-events-none"} // transition-opacity duration-600 ease-in-out `}
+            className={`relative // transition-transform duration-1000 ease-in-out translate-y-40 -translate-x-5 group-hover:translate-y-15  // border-b-4 shadow-lg //  scale-85  // ${isLighted ? "opacity-100" : "opacity-0 pointer-events-none"} // transition-opacity duration-600 ease-in-out `}
             src={avatar}
             alt="avatar"
           />
-          <span className="absolute -right-8 top-15 mt-2 text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span className="-translate-x-10 absolute -right-8 top-13 mt-2 text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             ¡Eureka!
           </span>
         </div>

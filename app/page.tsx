@@ -20,14 +20,14 @@ export default function Home() {
       {/* <SectionModule language={preferences.language} subject="intro" /> */}
       <div
         id={"narrative"}
-        className="size-full py-15 bg-gradient-to-b from-blue-500 to-purple-50"
+        className="size-full py-15 bg-linear-to-b from-blue-500 to-purple-50"
       ></div>
       {/* <TimeLineModel language={preferences.language} /> */}
       <NarrativeModel language={preferences.language} />
       <TechsListModel language={preferences.language} />
       <div
         id={"proyects"}
-        className="size-full py-15 bg-gradient-to-b from-purple-300 to-teal-50"
+        className="size-full py-15 bg-linear-to-b from-purple-300 to-teal-50"
       ></div>
       <ProyectsModule language={preferences.language} />
     </div>

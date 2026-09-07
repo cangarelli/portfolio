@@ -19,6 +19,7 @@ const WelcomeModule: React.FC<welcomModuleProps> = ({ language }) => {
       title={dataSchema.title}
       subTitle={dataSchema.subTitle}
       comentary={dataSchema.comentary}
+      language={language}
     />
   );
 };
